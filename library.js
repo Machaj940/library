@@ -31,6 +31,7 @@ function displayBook() {
         const eachBook = document.createElement('div');
         eachBook.classList.add('eachBook');
         
+        
         const title = document.createElement('div');
         title.classList.add('title');
         title.textContent = book.title;
@@ -43,12 +44,16 @@ function displayBook() {
         const read = document.createElement('div');
         read.classList.add('read');
         read.textContent = book.read;
+        const button = document.createElement('button');
+        button.classList.add('remove-book-btn');
+        button.textContent = "Remove Book";
 
         
         eachBook.appendChild(title);
         eachBook.appendChild(author);
         eachBook.appendChild(pages);
         eachBook.appendChild(read);
+        eachBook.appendChild(button);
 
         bookListDiv.appendChild(eachBook);
     };
@@ -56,3 +61,48 @@ function displayBook() {
 }
 
 displayBook();
+
+/* Create a 'New Book' button which when clicked brings up a form
+ to input a new book & details
+*/
+
+/*function togglePopup() {
+    document.getElementById('formPopup').style.display = 'block';
+};
+
+function hidePopup() {
+    document.getElementById('formPopup').style.display = none;
+}*/
+
+const popup = document.querySelector(".formDiv")
+
+function showPopup() {
+    popup.classList.add('open');
+}
+
+function hidePopup() {
+    popup.classList.remove('open');
+}
+
+
+// Delete book from DOM and array by clicking remove button 
+
+/*const removeButtons = document.getElementsByClassName('remove-book-btn');
+
+Array.from(removeButtons).forEach((removeButton) => {
+  removeButton.addEventListener('click', () => {
+    removeButton.parentNode.remove();
+  });
+});*/
+             
+         // OR
+
+const removeButtonsNodeList = document.querySelectorAll(".remove-book-btn");
+const removeButtonsArr = Array.prototype.slice.call(removeButtonsNodeList);
+removeButtonsArr.forEach((btn) => {
+
+    btn.addEventListener('click', function(){
+      btn.parentElement.remove(); 
+    });
+
+})

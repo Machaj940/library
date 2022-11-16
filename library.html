@@ -11,5 +11,33 @@
 <body>
     <div class="book-list">
     </div>
+
+    <div class="formBtn">
+        <button onclick="showPopup()">NEW BOOK</button>
+    </div>
+
+    <div class="formDiv" id="formPopup">
+        <div class="blocker" onclick="hidePopup()"></div>
+        <form action="" method="get" class="form-container">
+            <div class="format">
+                <div>
+                    <input type="text" id="title" name="title" placeholder="Title">
+                </div>
+                <div>
+                    <input type="text" id="author" name="author" placeholder="Author">
+                </div>
+                <div>
+                    <input type="text" id="pages" name="pages" placeholder="Pages">
+                </div>
+                <div>
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" id="read" name="read" value="Yes">
+                </div>
+                <div class="btn">
+                    <button type="submit">Add Book</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
