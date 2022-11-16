@@ -15,12 +15,7 @@ function addBookToLibrary(title, author, pages, read) {
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, "y");
 addBookToLibrary("Game of thrones", "GRRM", 670, "n");
 addBookToLibrary("Rum Diary", "Hunter S. Thompson", 443, "y");
-console.log(myLibrary);
 
-/*let title = document.querySelector(".title");
-let author = document.querySelector(".author");
-let pages = document.querySelector(".pages");
-let read = document.querySelector(".read");*/
 
 const bookListDiv = document.querySelector(".book-list");
 
