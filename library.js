@@ -1,4 +1,7 @@
+// Create book objects and add them to myLibrary array
+
 let myLibrary = [];
+
 
 function Book(title, author, pages, read) {
   this.title = title;
@@ -16,6 +19,10 @@ addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, "y");
 addBookToLibrary("Game of thrones", "GRRM", 670, "n");
 addBookToLibrary("Rum Diary", "Hunter S. Thompson", 443, "y");
 
+
+/* Create divs for each book and its info and append
+   each book div to the book-list div
+*/
 
 const bookListDiv = document.querySelector(".book-list");
 
