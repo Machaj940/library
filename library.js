@@ -66,13 +66,6 @@ displayBook();
  to input a new book & details
 */
 
-/*function togglePopup() {
-    document.getElementById('formPopup').style.display = 'block';
-};
-
-function hidePopup() {
-    document.getElementById('formPopup').style.display = none;
-}*/
 
 const popup = document.querySelector(".formDiv")
 
