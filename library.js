@@ -20,8 +20,8 @@ addBookToLibrary("Game of thrones", "GRRM", 670, "n");
 addBookToLibrary("Rum Diary", "Hunter S. Thompson", 443, "y");
 
 
-/* Create divs for each book and its info and append
-   each book div to the book-list div
+/* Create divs for each book, including info, and append
+   each book to the book-list div
 */
 
 const bookListDiv = document.querySelector(".book-list");
